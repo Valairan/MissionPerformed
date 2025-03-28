@@ -13,8 +13,7 @@ This is a task manager application with a React frontend and an Express.js backe
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/task-manager.git
-cd task-manager
+git clone https://github.com/Valairan/MissionPerformed
 ```
 ### 2. Install dependencies
 #### Backend
