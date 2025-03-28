@@ -49,20 +49,25 @@ app.get("/tasks/:id", async (req, res) => {
   }
 });
 
-app.put('/tasks/:id', async (req, res) => {
+app.put("/tasks/:id", async (req, res) => {
   try {
-    const task = await Task.findByIdAndUpdate(
-      req.params.id,
-      { status: req.body.status }, // Update the status field
-      { new: true }
+    const { id } = req.params;
+    const { title, description, status } = req.body;
+
+    const updatedTask = await Task.findByIdAndUpdate(
+      id,
+      { title, description, status },
+      { new: true } // Ensures the updated document is returned
     );
-    if (!task) {
-      return res.status(404).json({ message: 'Task not found' });
+
+    if (!updatedTask) {
+      return res.status(404).json({ message: "Task not found" });
     }
-    res.json(task);
+
+    res.json(updatedTask);
   } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: 'Server error' });
+    console.error("Error updating task:", err);
+    res.status(500).json({ message: "Internal Server Error" });
   }
 });
 

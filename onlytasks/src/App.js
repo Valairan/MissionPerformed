@@ -34,15 +34,17 @@ const App = () => {
   };
 
   const updateTask = async (task) => {
-    if (!editingTask) return;
+    if (!task._id) return;
+  
     try {
-      await axios.put(`${API_URL}/${editingTask._id}`, task);
+      await axios.put(`${API_URL}/${task._id}`, task);
       setEditingTask(null);
       fetchTasks();
     } catch (err) {
       console.error("Error updating task", err);
     }
   };
+  
 
   const deleteTask = async (id) => {
     try {
