@@ -43,7 +43,7 @@ PORT=5000
 Frontend: Create a .env.local file inside the frontend folder with the following content:
 
 ```env
-REACT_APP_API_URL=http://localhost:5000/tasks
+REACT_APP_API_URL=http://localhost:5000/
 ```
 ### 4. Run the application
 You can start both the frontend and backend using the start.sh script:
