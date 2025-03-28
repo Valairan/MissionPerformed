@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import TaskForm from "./components/TaskForm";
 import TaskList from "./components/TaskList";
 
-const API_URL = "http://localhost:5000/tasks";
+const API_URL = process.env.REACT_APP_API_URL;
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
