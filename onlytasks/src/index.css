@@ -1,0 +1,131 @@
+/* General Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6; /* Light gray background */
+  color: #333; /* Dark gray text */
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arial', sans-serif;
+  color: #2d3748; /* Darker text color */
+}
+
+/* Task Manager Container */
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+.shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+/* Form Styles */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Button Styles */
+button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.bg-blue-500 {
+  background-color: #4299e1;
+  color: white;
+}
+
+/* Task List Styles */
+ul {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 0.75rem;
+}
+
+li:hover {
+  background-color: #f7fafc;
+}
+
+li .font-bold {
+  font-weight: 700;
+}
+
+li .text-sm {
+  font-size: 0.875rem;
+  color: #718096; /* Gray color for the description text */
+}
+
+li button {
+  margin-left: 0.5rem;
+}
+
+li .bg-yellow-500 {
+  margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .max-w-xl {
+    max-width: 100%;
+  }
+}
