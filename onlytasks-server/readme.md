@@ -24,7 +24,7 @@ PORT: The port the backend server will listen to (default is 5000).
 Run the following command to start the backend server:
 
 ```bash
-npm start
+node index.js
 ```
 The backend will now be running at http://localhost:5000.
 

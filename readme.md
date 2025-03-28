@@ -1,6 +1,7 @@
 # OnlyTasks
 
 This is a task manager application with a React frontend and an Express.js backend. The app allows users to create, read, update, and delete tasks with real-time updates. The backend uses MongoDB for data persistence.
+[![Watch the video](https://img.youtube.com/vi/ePVLW7IkPL8/hqdefault.jpg)](https://www.youtube.com/watch?v=ePVLW7IkPL8)
 
 ## Project Structure
 

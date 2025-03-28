@@ -5,7 +5,7 @@ import TaskForm from "./components/TaskForm";
 import TaskList from "./components/TaskList";
 
 const API_URL = process.env.REACT_APP_API_URL;
-
+console.log(API_URL)
 const App = () => {
   const [tasks, setTasks] = useState([]);
   const [editingTask, setEditingTask] = useState(null);
